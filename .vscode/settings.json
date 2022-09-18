@@ -6,19 +6,13 @@
     "haskell.openDocumentationInHackage": true,
     "haskell.openSourceInHackage": true,
     "files.autoSave": "onFocusChange",
-    "workbench.colorTheme": "Visual Studio Dark",
+    //"workbench.colorTheme": "Solarized Light",
     "terminal.integrated.sendKeybindingsToShell": true,
     "haskell.toolchain": {
        "ghc": "9.4.2",
        "hls": "1.8.0.0"
     },
-    //"haskell.hlint.executablePath": "hlint",
-    "hoogle-vscode.useCabalDependencies": true,
-    "workbench.iconTheme": "vs-seti",
-    "workbench.preferredDarkColorTheme": "Visual Studio Dark",
-    "workbench.preferredHighContrastColorTheme": "Default High Contrast",
-    "haskell.indentationRules.enabled": false,
-    "editor.semanticHighlighting.enabled": false,
-    "typescript.inlayHints.enumMemberValues.enabled": true,
-    "window.autoDetectColorScheme": true,
+    "haskell.hlint.executablePath": "hlint",
+    "workbench.colorTheme": "Sublime Material Theme - Dark",
+    "terminal.integrated.tabs.defaultColor": null,
 }
