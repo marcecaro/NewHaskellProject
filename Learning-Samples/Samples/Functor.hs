@@ -24,14 +24,14 @@ example1 = fmap (\x-> "_"++show x++"_") [1,2,3]   -- ["_1_","_2_","_3_"]
 
 -- example on Maybe
 example2  = fmap (\x-> "_"++show x++"_") (Just 1)  -- Just "_1_"
-example2' = fmap (\x-> "_"++show x++"_") (Nothing)  -- Nothing
+example2' = fmap (\x-> "_"++(show x)++"_") (Nothing::Maybe Int)  -- Nothing
 example3  = fmap (\x-> "_"++show x++"_") (Just (Just 1))  -- Just "_Just 1_"
 
 
 
 -- example on Either
-example4 = fmap (\x-> "_"++show x++"_") (Left 1)  -- Left 1     <<-- Ojo, solo applica a right
-example5 = fmap (\x-> "_"++show x++"_") (Right 1) -- Right "_1_"
+example4 = fmap (\x-> "_"++(show (x::Int))++"_") (Left 1)  -- Left 1     <<-- Ojo, solo applica a right
+example5 = fmap (\x-> "_"++(show x)++"_") (Right 1) -- Right "_1_"
 
 
 -- example on ()
