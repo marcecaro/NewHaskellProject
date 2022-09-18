@@ -1,0 +1,20 @@
+{
+    "haskell.formattingProvider": "brittany",
+    "haskell.ghcupExecutablePath": "/home/codespace/.ghcup/bin/ghcup",
+    "haskell.manageHLS": "GHCup",
+    "haskell.checkProject": true,
+    "haskell.openDocumentationInHackage": true,
+    "haskell.openSourceInHackage": true,
+    "files.autoSave": "onFocusChange",
+    "workbench.colorTheme": "Solarized Light",
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "haskell.toolchain": {
+       "ghc": "9.4.2",
+       "hls": "1.8.0.0"
+    },
+    //"haskell.hlint.executablePath": "hlint",
+    "hoogle-vscode.useCabalDependencies": true,
+    "workbench.iconTheme": "vs-seti",
+    "workbench.preferredDarkColorTheme": "Solarized Light",
+    "workbench.preferredHighContrastColorTheme": "Default High Contrast Light",
+}
