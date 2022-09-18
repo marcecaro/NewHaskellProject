@@ -4,6 +4,7 @@
         "justusadam.language-haskell",
         "hoovercj.haskell-linter",
         "ms-vscode.makefile-tools",
-        "mogeko.haskell-extension-pack"
+        "mogeko.haskell-extension-pack",
+        "hoovercj.vscode-ghc-mod"
     ]
 }

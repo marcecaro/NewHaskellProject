@@ -1,23 +1,22 @@
 
 {-
 Example of Reverse Poland Notation combining two monads
-
 -}
 module LearningSamples.Samples.Rpn where
-import Control.Monad.State.Class
-import Control.Monad.State
+import Control.Monad.State.Class ( MonadState(put, state, get) )
+import Control.Monad.State ( runState, State )
 
 
 type Stack = [Int]   -- My Current Status
 
 
 push::Int->State Stack Int   -- Add an state transition where the state has a new element
-push n = state $ \xs -> (0, n:xs)
+push n = Control.Monad.State.Class.state $ \xs -> (0, n:xs)
 
 pop::State Stack Int    -- Take the current state, remove its head and use it as the new returned value
 pop = do 
-        stack <- get
-        put $ tail stack
+        stack <- Control.Monad.State.Class.get
+        Control.Monad.State.Class.put $ tail stack
         return $ head stack
 
 
@@ -34,7 +33,7 @@ end::State Stack Int
 end = do pop
 
 
-calculate:: State Stack Int
+calculate::State Stack Int
 calculate = do 
                 push 1
                 push 2
@@ -44,7 +43,7 @@ calculate = do
                 end
 
 main = do
-        let res = runState  calculate []
+        let res = Control.Monad.State.runState  calculate []
         print res
 
         

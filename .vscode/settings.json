@@ -13,6 +13,6 @@
        "hls": "1.8.0.0"
     },
     "haskell.hlint.executablePath": "hlint",
-    "workbench.colorTheme": "Sublime Material Theme - Dark",
+    "workbench.colorTheme": "Solarized Light",
     "terminal.integrated.tabs.defaultColor": null,
 }
