@@ -4,7 +4,9 @@
             "repositories": {
                 "marcecaro/NewHaskellProject": {
                     "permissions": {
-                        "issues": "write"
+                        "contents": "write",
+                        "pull_requests": "write",
+                        "repository_projects": "write"
                     }
                 }
             }
