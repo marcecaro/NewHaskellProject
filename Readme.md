@@ -25,17 +25,14 @@ using `ghcup tui` **install and select** this versions:
 ### Config
 ```shell 
 stack config set system-ghc --global true
-stack config set resolver lts-19.24
-```
-
-### Setup
-```shell
 stack setup
+stack config set resolver lts-19.24
 ```
 
 ### Init
 
 [Optional] Inside the project
+
 ```shell
 cd src
 stack init --force

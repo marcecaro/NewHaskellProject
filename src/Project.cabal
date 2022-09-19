@@ -12,9 +12,15 @@ library internal-lib
     build-depends:
         base -any
         ,mtl
+        ,filepath
+        ,directory
+        ,unix-compat
+        ,extra
+        ,optparse-applicative
+        ,text
 
 
-executable Project
+executable duh
     main-is: Main.hs
     other-modules:
         
