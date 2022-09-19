@@ -30,11 +30,5 @@ executable duh
     build-depends:
         base -any
         ,mtl
-        ,filepath
-        ,directory
-        ,unix
-        ,extra
-        ,optparse-applicative
-        ,text
         ,duhaskell
 
