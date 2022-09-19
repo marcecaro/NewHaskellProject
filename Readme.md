@@ -45,6 +45,7 @@ stack init
 
 ```shell
 stack install hlint
+stack install ghcid
 ```
 
 ```shell

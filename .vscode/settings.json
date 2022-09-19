@@ -7,12 +7,13 @@
     "files.autoSave": "onFocusChange",
     "terminal.integrated.sendKeybindingsToShell": true,
     "haskell.toolchain": {
-       "ghc": "9.0.2",
-       "hls": "1.8.0.0"
+        "ghc": "9.0.2",
+        "hls": "1.8.0.0"
     },
     "haskell.hlint.executablePath": "hlint",
     "workbench.colorTheme": "Solarized Light",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "haskell.formattingProvider": "stylish-haskell",
+    "indentRainbow.indicatorStyle": "light",
 }

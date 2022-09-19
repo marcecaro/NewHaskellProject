@@ -5,6 +5,14 @@
         "visortelle.haskell-spotlight",
         "sergey-kintsel.haskell-formatter-vscode-extension",
         "jomeinaster.bracket-peek",
-        "2gua.rainbow-brackets"
+        "2gua.rainbow-brackets",
+        "oderwat.indent-rainbow",
+        "jcanero.hoogle-vscode",
+        "edka.haskutil",
+        "hoovercj.haskell-linter",
+        "justusadam.language-haskell",
+        "meowcolm024.has-go",
+        "phoityne.phoityne-vscode",
+        "nopjmp.fairyfloss"
     ]
 }
