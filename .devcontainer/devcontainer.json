@@ -1,0 +1,13 @@
+{
+    "customizations": {
+        "codespaces": {
+            "repositories": {
+                "marcecaro/DuHaskell": {
+                    "permissions": {
+                        "issues": "write"
+                    }
+                }
+            }
+        }
+    }
+}
