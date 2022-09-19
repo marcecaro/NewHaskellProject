@@ -37,6 +37,20 @@ calculate = do
   plus
   end
 
+calculateWithFailure :: State Stack Int
+calculateWithFailure = do
+  push 1
+  push 2
+  plus
+  push 10
+  plus
+  plus
+  end
+
 main = do
   let res = runState calculate []
+  print res
+
+mainFailure = do
+  let res = runState calculateWithFailure []
   print res
