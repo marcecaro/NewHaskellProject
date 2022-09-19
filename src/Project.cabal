@@ -6,6 +6,8 @@ stability: experimental
 library internal-lib
     exposed-modules:
         Module.RpnSafe
+        Module.MonadRWST
+        Module.AppTypes
     hs-source-dirs:
         lib
     default-language: Haskell2010
@@ -15,7 +17,7 @@ library internal-lib
         ,mtl
         ,filepath
         ,directory
-        ,unix-compat
+        ,unix
         ,extra
         ,optparse-applicative
         ,text
@@ -28,5 +30,11 @@ executable duh
     default-language: Haskell2010
     build-depends:
         base -any
-        ,mtl
         ,internal-lib
+        ,mtl
+        ,filepath
+        ,directory
+        ,unix
+        ,extra
+        ,optparse-applicative
+        ,text
