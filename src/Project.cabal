@@ -9,6 +9,7 @@ library internal-lib
     hs-source-dirs:
         lib
     default-language: Haskell2010
+    extensions: RecordWildCards,NamedFieldPuns,OverloadedStrings
     build-depends:
         base -any
         ,mtl
