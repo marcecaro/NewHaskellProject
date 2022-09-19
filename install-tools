@@ -1,0 +1,5 @@
+#!/bin/bash
+stack install hlint
+stack install ghcid
+stack install haskell-dap ghci-dap haskell-debug-adapter
+stack install stylish-haskell hindent

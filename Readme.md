@@ -49,18 +49,22 @@ Inside the project
 cd src
 stack init --force
 ```
+Check that the project build: 
+
+
+```shell
+cd src
+stack build
+```
+
 
 ### Install tools
 
 ```shell
-stack install hlint
-stack install ghcid
-stack install haskell-dap ghci-dap haskell-debug-adapter
+./install-tools
 ```
 
-```shell
-stack install stylish-haskell hindent
-```
+*Check that all the tools were installed*
 
 ## VSCode configuration
 
