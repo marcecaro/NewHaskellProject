@@ -1,3 +1,10 @@
 {
-    "recommendations": []
+    "recommendations": [
+        "haskell.haskell",
+        "mogeko.haskell-extension-pack",
+        "visortelle.haskell-spotlight",
+        "sergey-kintsel.haskell-formatter-vscode-extension",
+        "jomeinaster.bracket-peek",
+        "2gua.rainbow-brackets"
+    ]
 }
