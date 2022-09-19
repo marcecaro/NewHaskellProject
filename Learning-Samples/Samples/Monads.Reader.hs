@@ -12,7 +12,7 @@ getDefaultEnv :: Environment
 getDefaultEnv = Environment "DEBUG"
 
 
--- Function that logs but adding a level
+-- Function that logs but adding a levelq
 logger:: String -> String-> IO ()
 logger level mesg =  print $ level ++": "++mesg
 

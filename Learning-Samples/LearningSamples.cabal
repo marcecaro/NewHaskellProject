@@ -1,9 +1,7 @@
-cabal-version: 2.4
+cabal-version: 1.12
 name: LearningSamples
 version: 1.0
 stability: experimental
-x-ghc-framework-version: 8.6.4-13.14-3
-x-last-ide-version: HfM1.8.2
 
 executable LearningSamples
     main-is: Main.hs

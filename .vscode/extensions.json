@@ -5,6 +5,8 @@
         "hoovercj.haskell-linter",
         "ms-vscode.makefile-tools",
         "mogeko.haskell-extension-pack",
-        "hoovercj.vscode-ghc-mod"
+        "hoovercj.vscode-ghc-mod",
+        "sergey-kintsel.haskell-formatter-vscode-extension",
+        "Meowcolm024.has-go"
     ]
 }

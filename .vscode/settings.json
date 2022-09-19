@@ -1,18 +1,17 @@
 {
-    "haskell.formattingProvider": "brittany",
     "haskell.ghcupExecutablePath": "/home/codespace/.ghcup/bin/ghcup",
     "haskell.manageHLS": "GHCup",
     "haskell.checkProject": true,
     "haskell.openDocumentationInHackage": true,
     "haskell.openSourceInHackage": true,
     "files.autoSave": "onFocusChange",
-    //"workbench.colorTheme": "Solarized Light",
     "terminal.integrated.sendKeybindingsToShell": true,
     "haskell.toolchain": {
-       "ghc": "9.4.2",
+       "ghc": "9.0.2",
        "hls": "1.8.0.0"
     },
     "haskell.hlint.executablePath": "hlint",
     "workbench.colorTheme": "Solarized Light",
-    "terminal.integrated.tabs.defaultColor": null,
+    "editor.formatOnPaste": true,
+    "haskell.formattingProvider": "stylish-haskell",
 }
