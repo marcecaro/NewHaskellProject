@@ -17,4 +17,12 @@
     "indentRainbow.indicatorStyle": "light",
     "indentRainbow.colorOnWhiteSpaceOnly": false,
     "indentRainbow.tabmixColor": "",
+    "has-go.ghciInterpreter": "GHCi",
+    "has-go.ghcArgs": "-i:./app:./lib",
+    "has-go.stackRunButton": true,
+    "has-go.overrideGHCiArgs": "-i:./app:./lib ${current}",
+    "has-go.haskellTool": "Stack",
+    "has-go.stackArgs": "",
+    "has-go.runFileButton": true,
+    "has-go.loadGHCiButton": true,
 }
