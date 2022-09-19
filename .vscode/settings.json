@@ -13,5 +13,6 @@
     "haskell.hlint.executablePath": "hlint",
     "workbench.colorTheme": "Solarized Light",
     "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
     "haskell.formattingProvider": "stylish-haskell",
 }

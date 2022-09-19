@@ -6,7 +6,4 @@ module Main where
 -- data  Either a b  =  Left a | Right b
 -- data NonEmpty a = a :| [a]
 -- IO
-
-
-
 main = print "Hello World"
