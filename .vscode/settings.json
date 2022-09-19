@@ -16,4 +16,6 @@
     "editor.formatOnSave": true,
     "haskell.formattingProvider": "stylish-haskell",
     "indentRainbow.indicatorStyle": "light",
+    "indentRainbow.colorOnWhiteSpaceOnly": false,
+    "indentRainbow.tabmixColor": "",
 }

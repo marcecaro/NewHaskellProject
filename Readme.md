@@ -46,6 +46,7 @@ stack init
 ```shell
 stack install hlint
 stack install ghcid
+stack install haskell-dap ghci-dap haskell-debug-adapter
 ```
 
 ```shell

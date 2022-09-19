@@ -5,6 +5,7 @@ import           Control.Monad.Reader
 -- Environment that keeps global values
 newtype Environment =
   Environment
+    -- |
     { getLogLevel :: String
     }
   deriving (Show)
@@ -19,13 +20,14 @@ logger level mesg = print $ level ++ ": " ++ mesg
 
 --bussinesLogic::  (MonadReader Environment m, MonadIO m)  => m ()
 -- Bussines logic that will be runned by runReaderT, and do IO opperations
+--bussinesLogic :: ReaderT Environment IO ()
 bussinesLogic = do
   env <- asks getLogLevel
   liftIO (logger env "Starting Application") -- liftIO for using IO inside a reader
-  local (\env -> Environment "INFO") $ -- Change a local environment
+  local (\_ -> Environment "INFO") $ -- Change a local environment
    do
-    env <- asks getLogLevel
-    liftIO (logger env "Running in info <<---")
+    e <- asks getLogLevel
+    liftIO (logger e "Running in info <<---")
   liftIO $ logger env "Getting back on previous environment"
   return ()
 
