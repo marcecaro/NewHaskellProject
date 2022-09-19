@@ -1,18 +1,26 @@
 # Haskell Development environment setup
 
+This project started from: https://github.com/marcecaro/NewHaskellProject
+
 ## Install  ghcup
 
 ```shell
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 ```
 
-using `ghcup tui` select this versions:
+Add this line in **~/.profile**:
 
--`HLS-1.8.0.0`
--`cabal-3.8.1.0`
--`GHC-9.0.2`: This is the lates with lts -> lts-19.24
+ ```shell
+ [ -f "/home/codespace/.ghcup/env" ] && source "/home/codespace/.ghcup/env" # ghcup-env` in *~/.profile* 
+ ```
 
-*~/.stack/global-project/stack.yaml*
+using `ghcup tui` **install and select** this versions:
+
+- `HLS-1.8.0.0`
+- `cabal-3.8.1.0`
+- `GHC-9.0.2`: This is the lates with lts -> lts-19.24
+
+**~/.stack/global-project/stack.yaml**
 ```yaml
 packages: []
 resolver: lts-19.24
@@ -38,7 +46,8 @@ stack setup
 ### Init
 Inside the project
 ```shell
-stack init
+cd src
+stack init --force
 ```
 
 ### Install tools
@@ -55,36 +64,11 @@ stack install stylish-haskell hindent
 
 ## VSCode configuration
 
-*.vscode/settings.json*
-```json
-{
-    "haskell.formattingProvider": "brittany",
-    "haskell.ghcupExecutablePath": "/home/codespace/.ghcup/bin/ghcup",
-    "haskell.manageHLS": "GHCup",
-    "haskell.checkProject": true,
-    "haskell.openDocumentationInHackage": true,
-    "haskell.openSourceInHackage": true,
-    "files.autoSave": "onFocusChange",
-    "terminal.integrated.sendKeybindingsToShell": true,
-    "haskell.toolchain": {
-       "ghc": "9.0.2",
-       "hls": "1.8.0.0"
-    },
-    "haskell.hlint.executablePath": "hlint",
-    "workbench.colorTheme": "Solarized Light",
-    "haskell.formattingProvider": "stylish-haskell",
-}
-```
+- Install the recommended plugins
 
-*.vscode/settings.json*
-```json
-{
-    "recommendations": [
-        "haskell.haskell",
-        "justusadam.language-haskell",
-        "hoovercj.haskell-linter",
-        "ms-vscode.makefile-tools",
-        "mogeko.haskell-extension-pack",
-    ]
-}
-```
+
+## Change Project Name
+
+**in:**
+-- Project.cabal
+-- `stack init --force`

@@ -1,7 +1,7 @@
 {-
 Example of Reverse Poland Notation combining two monads
 -}
-module Project.RpnSafe where
+module Module.RpnSafe where
 
 import           Control.Monad.State
 
