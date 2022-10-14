@@ -5,6 +5,10 @@ This project started from: https://github.com/marcecaro/NewHaskellProject
 ## Install  ghcup
 
 ```shell
+brew install llvm
+echo '' >>  ~/.zshrc
+echo 'export PATH="/opt/homebrew/opt/llvm@12/bin:$PATH"' >> ~/.zshrc
+echo 'export C_INCLUDE_PATH="`xcrun --show-sdk-path`/usr/include/ffi"' >> ~/.zshrc
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 ```
 
@@ -34,14 +38,12 @@ stack config set resolver lts-19.24
 [Optional] Inside the project
 
 ```shell
-cd src
 stack init --force
 ```
 Check that the project build: 
 
 
 ```shell
-cd src
 stack build
 ```
 
