@@ -13,5 +13,6 @@
         "justusadam.language-haskell",
         "meowcolm024.has-go",
         "phoityne.phoityne-vscode",
+        "ndmitchell.haskell-ghcid"
     ]
 }
