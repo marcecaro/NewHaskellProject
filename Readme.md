@@ -7,7 +7,7 @@ This project started from: https://github.com/marcecaro/NewHaskellProject
 ```shell
 brew install llvm
 echo '' >>  ~/.zshrc
-echo 'export PATH="/opt/homebrew/opt/llvm@12/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="~/.local/bin:/opt/homebrew/opt/llvm@12/bin:$PATH"' >> ~/.zshrc
 echo 'export C_INCLUDE_PATH="`xcrun --show-sdk-path`/usr/include/ffi"' >> ~/.zshrc
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 ```
